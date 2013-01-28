@@ -18,12 +18,13 @@ uint8_t  last_rssi_value = 0;
 uint16_t ppmCountter = 0;
 uint16_t ppmTotal = 0;
 
-boolean PWM_output = 1; // set if parallel PWM output is desired
+uint8_t PWM_output = 1; // set if parallel PWM output is desired
 
 uint8_t firstpack = 0;
 uint8_t lostpack = 0;
 
-boolean willhop = 0, fs_saved = 0;
+uint8_t willhop = 0;
+uint8_t fs_saved = 0;
 
 ISR(TIMER1_OVF_vect)
 {
